@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lojinha - Pastoral da Recreação</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card-container lojinha-box">
+    
+    <!-- PÁGINA 1: VITRINE DE PRODUTOS -->
+    <section id="pag-1" class="pagina-lojinha ativa">
+      <a href="index.html" class="btn-voltar">← Voltar</a>
+      
+      <h1 class="titulo-lojinha">Lojinha Recreação 🛍️</h1>
+      
+      <div class="aviso-institucional">
+        <p>✨ Todo o valor arrecadado nesta lojinha é destinado a manter a nossa pastoral, continuando a servir nossas crianças com todo carinho e acolhimento que elas merecem!</p>
+      </div>
+
+      <div class="grid-produtos" id="grid-produtos">
+        <!-- Produtos inseridos via JS -->
+      </div>
+
+      <button class="btn btn-destaque" onclick="navegarPara('pag-3')">
+        🛒 Ver Seu Carrinho (<span id="qtd-carrinho">0</span>)
+      </button>
+    </section>
+
+
+    <!-- PÁGINA 2: DETALHES DO MODELO -->
+    <section id="pag-2" class="pagina-lojinha">
+      <button class="btn-voltar" onclick="navegarPara('pag-1')">← Voltar aos modelos</button>
+      
+      <h2 id="detalhe-titulo" class="titulo-detalhe"></h2>
+      
+      <div class="box-imagem">
+        <img id="detalhe-img" src="" alt="Camiseta">
+      </div>
+
+      <div class="box-texto-devocional">
+        <p id="detalhe-texto"></p>
+      </div>
+
+      <div class="box-preco">R$ 50,00</div>
+
+      <button class="btn" onclick="adicionarAtualAoCarrinho()">ADICIONAR AO CARRINHO</button>
+    </section>
+
+
+    <!-- PÁGINA 3: CARRINHO E FINALIZAÇÃO -->
+    <section id="pag-3" class="pagina-lojinha">
+      <button class="btn-voltar" onclick="navegarPara('pag-1')">← Voltar à lojinha</button>
+      
+      <h2 class="titulo-lojinha">Seu Carrinho 🛒</h2>
+      
+      <div id="lista-carrinho" class="lista-carrinho">
+        <!-- Itens do carrinho aparecerão aqui -->
+      </div>
+
+      <div class="total-carrinho" id="total-carrinho">
+        Total: R$ 0,00
+      </div>
+
+      <button class="btn btn-finalizar" onclick="finalizarPedidoWhatsapp()">
+        FINALIZAR COMPRA (VIA WHATSAPP)
+      </button>
+    </section>
+
+  </main>
+
+  <script src="lojinha.js"></script>
+</body>
+</html>

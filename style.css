@@ -1,0 +1,231 @@
+/* Importando a fonte similar à Dreaming Outloud / Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Montserrat:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Fundo Gradiente de 90 graus exatamente como solicitado */
+  background: linear-gradient(90deg, #fff7ad, #ffa9f9);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 15px;
+}
+
+/* Container do Cartão - Adaptação Automática */
+.card-container {
+  width: 100%;
+  max-width: 400px; /* Largura perfeita para simular tela de celular no PC */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo Principal */
+.logo-principal {
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Versículo Bíblico */
+.versiculo {
+  font-family: 'Caveat', cursive; /* Fonte similar à Dreaming Outloud */
+  font-size: 1.35rem; /* Ajuste proporcional (~14.9px ajustado para escala web) */
+  color: #000000;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.versiculo span {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Container dos Botões */
+.links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+/* Estilo dos Botões */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  
+  /* Gradiente linear de 90 graus dos botões */
+  background: linear-gradient(90deg, #cf7982, #dba4aa, #efced1);
+  
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-radius: 25px; /* Cantos arredondados do layout */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Logos do Rodapé */
+.logos-rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.img-rodape {
+  height: 60px;
+  width: auto;
+}
+/* --- LOJINHA CSS --- */
+.pagina-lojinha {
+  display: none;
+  width: 100%;
+}
+
+.pagina-lojinha.ativa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-voltar {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.aviso-institucional {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.grid-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-item img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-modelo {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, #cf7982, #dba4aa, #efced1);
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.box-imagem img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.box-texto-devocional {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.4;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.box-preco {
+  background: #ffffff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lista-carrinho {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.7);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.item-carrinho button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.total-carrinho {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-finalizar {
+  background: #25d366 !important;
+  color: white !important;
+}
+/* Título da Lojinha na Fonte Cursiva / Dreaming Outloud */
+.titulo-lojinha {
+  font-family: 'Caveat', cursive !important;
+  font-size: 2.4rem !important;
+  color: #000000 !important;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
