@@ -229,3 +229,196 @@ body {
   margin-bottom: 10px;
   font-weight: 600;
 }
+/* --- ESTILOS DA PÁGINA SERVIÇOS --- */
+.subtitulo-servico {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.versiculo-servico {
+  font-family: 'Caveat', cursive;
+  font-size: 1.25rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.versiculo-servico span {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #777;
+}
+
+.card-servico-bloco {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card-servico-bloco h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.card-servico-bloco p {
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+.destaque-rosa {
+  background: linear-gradient(135deg, #fff0f3, #ffe3e8);
+  border-left: 4px solid #dba4aa;
+}
+
+.subtitulo-secao {
+  font-size: 0.95rem;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.grid-cultivar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-cultivar {
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.card-cultivar strong {
+  display: block;
+  color: #cf7982;
+  margin-bottom: 3px;
+}
+
+.lista-compromissos {
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.lista-compromissos li {
+  margin-bottom: 8px;
+}
+
+.tag-horario {
+  background: #ffffff;
+  border: 2px dashed #dba4aa;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.lista-etapas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card-etapa {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 12px;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.num-etapa {
+  background: linear-gradient(135deg, #cf7982, #dba4aa);
+  color: white;
+  font-weight: bold;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.card-etapa strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.card-etapa p {
+  font-size: 0.78rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+.aviso-cuidados {
+  border-left: 4px solid #ff9f43;
+  background: #fffdf9;
+}
+
+.frase-final-servico {
+  margin-top: 10px;
+  text-align: center !important;
+  color: #cf7982 !important;
+  font-weight: 500;
+}
+/* Card PIX */
+.card-pix {
+  background: #ffffff !important;
+  border: 2px dashed #dba4aa;
+  text-align: center;
+}
+
+.card-pix h3 {
+  color: #cf7982;
+  margin-bottom: 5px;
+}
+
+.card-pix p {
+  text-align: center !important;
+  margin-bottom: 8px;
+}
+
+.chave-pix-box {
+  background: #fff0f3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  user-select: all; /* Facilita para o usuário selecionar e copiar */
+}
+
+.chave-pix-box code {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #333;
+}
